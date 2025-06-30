@@ -14,14 +14,13 @@
     /* colores secundarios */
 }
 
-.contenedor {
+.header-contenedor {
   width: 100%;
-  background-color: var(--white);
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0 2rem;
+  padding: 0 4rem;
 }
 
 .img-logo {
@@ -68,6 +67,7 @@
  
 .section-hero{
   width: 100%;
+  display: flex;
   text-align: center;
   color: var(--white);
   background-image: url(/img/Desing/pic-hero.jpg);
@@ -133,6 +133,7 @@ i{
 .a-icon{
   display: flex;
   align-items: center;
+  justify-content: center;
   text-decoration: none;
   color: var(--dark);
   font-size: 2rem;
@@ -236,3 +237,219 @@ section img:hover{
 /* -- -----------------------------------------  FIN DEL PORTAFOLIO  ----------------------------------------------- */
  
 
+.pack-contenedor{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 0 5rem;
+  margin-top: 10rem;
+  
+}
+
+.pack-boda{
+  width: 450px;
+  height: 650px;
+  padding: 2rem;
+  background-color: rgb(44, 42, 42);
+  color: var(--white);
+  border-radius: 7%;
+}
+
+.pack-boda h1{
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+strong{
+  font-size: 1.5rem;
+  display: block;
+}
+
+.pack-boda ul{
+
+  margin-top: 2.5rem;
+  font-size: 1.2rem;
+  gap: 15px;
+}
+
+
+.pack-condiciones{
+  margin-top: 2.5rem;
+}
+
+
+.pack-button{
+  width: 100px;
+  height: 30px;
+  background-color: var(--red);
+  color: var(--white);
+  margin: 5% 50% 0 30%;
+}
+
+.pack-button:hover{
+  width: 120px;
+  height: 40px;
+  transition: 1s;
+  text-decoration: center;
+}
+
+
+/* ------------------------FIN DE PACK DE BODAS  ------------------------ */
+
+
+
+.pack-video{
+
+  border: 1px solid ;
+  width: 450px;
+  height: 650px;
+  padding: 2rem;
+  background-color: rgb(44, 42, 42);
+  color: var(--white);
+  border-radius: 7%;
+  
+}
+
+.pack-video h1{
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+strong{
+  font-size: 1.5rem;
+  display: block;
+}
+
+.pack-video ul{
+
+  margin-top: 2.5rem;
+  font-size: 1.2rem;
+  gap: 15px;
+}
+
+
+
+.pack-condiciones{
+  margin-top: 2.5rem;
+}
+
+/* -----------------------------FIN DE PACK DE VIDEO ----------------------------------- */
+
+
+.pack-cumple{
+
+  border: 1px solid ;
+  width: 450px;
+  height: 650px;
+  padding: 2rem;
+  background-color: rgb(44, 42, 42);
+  color: var(--white);
+  border-radius: 7%;
+}
+
+.pack-cumple h1{
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+strong{
+  font-size: 1.5rem;
+  display: block;
+}
+
+.pack-cumple ul{
+
+  margin-top: 2.5rem;
+  font-size: 1.2rem;
+  gap: 15px;
+}
+
+
+.pack-condiciones{
+  margin-top: 2.5rem;
+}
+
+/* -----------------FIN DE PACK DE CUMPLEAÑOS ----------------------------------- */
+
+
+.pack-graduacion{
+
+  border: 1px solid ;
+  width: 450px;
+  height: 650px;
+  padding: 2rem;
+  background-color: rgb(44, 42, 42);
+  color: var(--white);
+  border-radius: 7%;
+  
+}
+
+.pack-graduacion h1{
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+strong{
+  font-size: 1.5rem;
+  display: block;
+}
+
+.pack-graduacion ul{
+
+  margin-top: 2.5rem;
+  font-size: 1.2rem;
+  gap: 15px;
+}
+
+
+.pack-condiciones{
+  margin-top: 2.5rem;
+}
+
+/* ---------------------------------FIN DE PAQUETES-------------------------------------------------- */
+
+
+
+
+
+
+
+
+/* ------------------------------  FIN DEL FORMULARIO  ---------------------------------------------------- */
+
+footer{
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: var(--white);
+  
+}
+
+.footer-copy{
+  display: flex;
+  padding: 15px;
+  margin-left: 25px;
+}
+
+.pic-footer{
+
+  width: 2rem;
+}
+
+.footer-a{
+  text-decoration: none;
+  color: var(--white);
+  margin-left: 30px;
+  margin-right: 20px;
+}
