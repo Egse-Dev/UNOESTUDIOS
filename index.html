@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UNOESTUDIOS</title>
     <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/img/icon.png">
+
 </head>
 
 <body>
@@ -77,6 +79,7 @@
                 <h1>PORTAFOLIO</h1>
             </a>
 
+           
             
             <section class="bodas">
 
@@ -249,64 +252,72 @@
 
 
 
-        <nav class="contenedor-formulario">
+        <nav class="nav-formulario">
 
             <a class="a-icon" href="/" id="contacto">
                 <img class="icon-historias" src="/img/icon.png" alt="">
                 <h1>CONTACTOS</h1>
             </a>
-            
-            <section class="form-contenedor">
-                
-                
-                <form action="/formulario-recibido.html">
 
 
 <!-- Datos del cliente -->
+            <section class="contenedor-form">
 
+
+            
                     <section class="form-datocliente">
+                        
+                        <form class="form-cliente" action="/formulario-recibido.html"> 
 
-                        <h2>
-                            Datos del cliente
-                        </h2>
+                                <h2>
+                                    Datos del cliente
+                                </h2>
 
-                        <div>
-                            <label for="Nombre y Apellido ">Nombre Completo</label>
-                            <input type="text" placeholder="Ingresa tu nombre completo" required>
-                        </div>
+                                <div>
+                                    <label for="Nombre y Apellido ">Nombre Completo</label>
+                                    <input type="text" placeholder="Ingresa tu nombre completo" required>
+                                </div>
 
-                        <div>
-                            <label for="Telefono">Numero de Telefono</label>
-                            <input type="number" placeholder="Ingresa tu numero de Telefono" required>
-                        </div>
+                                <div>
+                                    <label for="Telefono">Numero de Telefono</label>
+                                    <input type="number" placeholder="Ingresa tu numero de Telefono" required>
+                                </div>
 
-                        <div>
-                            <label for="Correo Electrónico">Correo Electrónico</label>
-                            <input type="email" placeholder="example@gmail.com" required>
-                        </div>
+                                <div>
+                                    <label for="Correo Electrónico">Correo Electrónico</label>
+                                    <input type="email" placeholder="example@gmail.com" required>
+                                </div>
 
-                        <div>
-                            <label for="Contactonarnos"> ¿Cómo prefiere que lo contactemos?</label> 
-                            <div>
-                            <select name="" id="">
+                                <div>
+                                    <label for="Contactonarnos"> ¿Cómo prefiere que lo contactemos?</label> 
+                                    <div>
+                                    <select name="" id="">
 
-                                <optgroup>
-                                    <option value="Watsap">Watsap</option>
-                                    <option value="email">Correo Electrónico</option>
-                                    <option value="Llamada">Llamada</option>
-                                </optgroup>
+                                        <optgroup>
+                                            <option value="Watsap">Watsap</option>
+                                            <option value="email">Correo Electrónico</option>
+                                            <option value="Llamada">Llamada</option>
+                                        </optgroup>
 
-                            </select> 
-                            </div>
-                        </div>
-
+                                    </select> 
+                                    </div>
+                                </div>
+                                
+                        <input type="submit" value="Enviar">
+                        </form>
                     </section>
 
 
+                        
+                        
+
+
 <!-- Datos del evento -->
+            
 
+                <section class="form-datos-evento"> 
+                    <form action="/formulario-recibido.html">
 
-                    <section class="form-datoevento"> 
 
                         <h2>Datos del cliente</h2>
                         <div>
@@ -334,13 +345,25 @@
                             <label for="">Lugar del evento</label>
                             <input type="text" placeholder="Ingresa la direccion exacta" required>
                         </div>
-                    </section>
+
+                        <input type="submit" value="Enviar">
+                    </form>
+                </section>
+
+
+
+            
+
+                    
 
 <!-- Paquetes interesados -->
+            
 
-                    <section class="form-pack">
-                        
-                        <h2>Paquetes interesados</h>
+                <section class="form-pack">
+                    <form action="/formulario-recibido.html">
+
+
+                        <h2>Paquetes interesados</h2>
 
                         <div>
 
@@ -370,14 +393,13 @@
                             
                         </div>
 
-                    </section>
-
-                </form>
+                        <input type="submit" value="Enviar">
+                    </form>
+                </section>
 
 
 
             </section>
-
         </nav>
     </main>
 <!-- --------------------------------------  FIN DEL MAIN  ------------------------------------------------ -->

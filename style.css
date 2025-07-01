@@ -124,13 +124,14 @@ i{
   background-color: var(--white);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   padding: 0 2rem;
 
 }
 
 .a-icon{
+  display: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -146,6 +147,7 @@ i{
 .icon-historias{
 
   width: 100px;
+  
 
 }
 
@@ -416,7 +418,97 @@ strong{
 /* ---------------------------------FIN DE PAQUETES-------------------------------------------------- */
 
 
+.contenedor-form{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+  padding: 0 5rem;
+  margin-top: 10rem;
+}
 
+
+/* Formularios individuales */
+.contenedor-form section {
+  background-color: var(--gris);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px var(--sombra);
+  transition: transform 0.3s ease;
+}
+
+.contenedor-form section:hover {
+  transform: scale(1.01);
+}
+
+/* Títulos */
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--rojo);
+  text-transform: uppercase;
+}
+
+/* Inputs y Selects */
+input, select, textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--red);
+  outline: none;
+}
+
+/* Etiquetas */
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.25rem;
+  color: var(--dark);
+}
+
+/* Checkboxs */
+input[type="checkbox"] {
+  width: auto;
+  margin-left: 0.5rem;
+  accent-color: var(--red);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+
+@media (min-width: 768px) {
+  .contenedor-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form-datocliente,
+  .form-datos-evento,
+  .form-pack {
+    width: 30%;
+
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
 
 
 
@@ -426,7 +518,7 @@ strong{
 
 footer{
   width: 100%;
-  height: auto;
+  height: 10rem;
   margin-top: 100px;
   display: flex;
   align-items: center;
@@ -442,6 +534,10 @@ footer{
   margin-left: 25px;
 }
 
+.img-footer{
+  gap: 2rem;
+}
+
 .pic-footer{
 
   width: 2rem;
@@ -452,4 +548,30 @@ footer{
   color: var(--white);
   margin-left: 30px;
   margin-right: 20px;
+}
+
+
+
+
+/* Mensaje de Formularios recibidos */
+
+.form-exitoso{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 200px;
+}
+
+.a-mensaje{
+  text-decoration: none;
+  color: var(--dark);
+  font-size: 3rem;
+}
+
+.a-msj-input:hover{
+
+  transform: scale(1.01);
 }
