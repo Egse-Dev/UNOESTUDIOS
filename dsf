@@ -13,18 +13,16 @@
 
     /* colores secundarios */
 }
+
 .header-contenedor {
-  max-width: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 0 4rem;
-  box-sizing: border-box;
 }
 
-
-  
 .img-logo {
   width: 250px;
   height: auto;
@@ -49,9 +47,10 @@
 
 @media screen and (max-width: 768px) {
   nav {
-    flex-direction: column;
+    flex-direction: flex;
     align-items: center;
     text-align: center;
+    margin-left: 0;
   }
 }
 
@@ -71,7 +70,7 @@
   display: flex;
   text-align: center;
   color: var(--white);
-  background-image: url(img/Desing/pic-hero.jpg);
+  background-image: url(/img/Desing/pic-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -89,21 +88,6 @@ button{
 .div-hero{
   align-items: center;
   padding: 7% 0;
-}
-@media (max-width: 768px) {
-  .div-hero h1 {
-    font-size: 3.5rem;
-  }
-
-  .div-hero p {
-    font-size: 1.5rem;
-    padding-top: 2rem;
-  }
-
-  .but-hero {
-    width: 100%;
-    margin-top: 3rem;
-  }
 }
 
 .div-hero h1 {
@@ -250,14 +234,6 @@ section img:hover{
     align-items: center;
     text-align: center;
     margin-left: 0;
-  }
-}
-
-@media (max-width: 768px) {
-  .bodas,
-  .aventuras,
-  .celebracion {
-    overflow: hidden;
   }
 }
 /* -- -----------------------------------------  FIN DEL PORTAFOLIO  ----------------------------------------------- */
@@ -598,25 +574,4 @@ footer{
 .a-msj-input:hover{
 
   transform: scale(1.01);
-}
-
-@media (max-width: 768px) {
-  footer {
-    flex-direction: column;
-    height: auto;
-    text-align: center;
-  }
-
-  .footer-copy {
-    flex-direction: column;
-    margin: 1rem 0;
-    padding: 1rem;
-  }
-
-  .img-footer {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
 }
