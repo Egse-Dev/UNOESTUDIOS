@@ -13,30 +13,105 @@
 
     /* colores secundarios */
 }
+
+
+@media (max-width: 480px) {
+
+
+  html {
+    font-size: 50%;
+  }
+
+  .header-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+   
+  }
+
+  .a-logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .img-logo {
+    width: 80px;
+    height: auto;
+  }
+
+  .nav-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .items {
+    font-size: 1.6rem;
+    margin: 0;
+  }
+
+  .section-hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    min-height: 60vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(img/Desing/pic-hero.jpg);
+    color: var(--white);
+  }
+
+  .div-hero {
+    padding: 2rem 1rem;
+  }
+
+  .div-hero h1 {
+    font-size: 2.5rem;
+    line-height: 1.3;
+
+  }
+
+  .div-hero p {
+    font-size: 1.4rem;
+    padding-top: 2rem;
+  }
+
+  .but-hero {
+    margin-top: 3rem;
+    width: 100%;
+    max-width: 200px;
+    height: 3rem;
+    font-size: 1.4rem;
+  }
+
+  i {
+    font-size: 1.2rem;
+  }
+}
+
+
+/* -------------------------------------------- */
+
 .header-contenedor {
-  max-width: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 0 4rem;
-  box-sizing: border-box;
 }
 
-
-  
 .img-logo {
-  width: 250px;
+  width: 100px;
   height: auto;
   max-width: 100%;
 }
 
 
-@media screen and (max-width: 768px) {
-  .img-logo {
-    width: 180px; 
-  }
-}
+
 
 .but-items{
   background: var(--dark);
@@ -49,9 +124,10 @@
 
 @media screen and (max-width: 768px) {
   nav {
-    flex-direction: column;
+    flex-direction: flex;
     align-items: center;
     text-align: center;
+    margin-left: 0;
   }
 }
 
@@ -71,7 +147,7 @@
   display: flex;
   text-align: center;
   color: var(--white);
-  background-image: url(img/Desing/pic-hero.jpg);
+  background-image: url(/img/Desing/pic-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -89,21 +165,6 @@ button{
 .div-hero{
   align-items: center;
   padding: 7% 0;
-}
-@media (max-width: 768px) {
-  .div-hero h1 {
-    font-size: 3.5rem;
-  }
-
-  .div-hero p {
-    font-size: 1.5rem;
-    padding-top: 2rem;
-  }
-
-  .but-hero {
-    width: 100%;
-    margin-top: 3rem;
-  }
 }
 
 .div-hero h1 {
@@ -133,8 +194,13 @@ i{
   height: 4rem;
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-/* -- -----------------------------------------  FIN DEL HERO SECTION  ----------------------------------------------- */
- 
+
+
+
+
+/* --------------------FIN DEL HEADER----------- */
+
+
 .main-contenedor{
   width: 100%;
   background-color: var(--white);
@@ -250,14 +316,6 @@ section img:hover{
     align-items: center;
     text-align: center;
     margin-left: 0;
-  }
-}
-
-@media (max-width: 768px) {
-  .bodas,
-  .aventuras,
-  .celebracion {
-    overflow: hidden;
   }
 }
 /* -- -----------------------------------------  FIN DEL PORTAFOLIO  ----------------------------------------------- */
@@ -598,25 +656,4 @@ footer{
 .a-msj-input:hover{
 
   transform: scale(1.01);
-}
-
-@media (max-width: 768px) {
-  footer {
-    flex-direction: column;
-    height: auto;
-    text-align: center;
-  }
-
-  .footer-copy {
-    flex-direction: column;
-    margin: 1rem 0;
-    padding: 1rem;
-  }
-
-  .img-footer {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
 }
